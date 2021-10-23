@@ -6,11 +6,9 @@ ALTER database music_site owner to Roman;
 
 CREATE table if not exists list_singers (
 Id_singer serial references ganre_singer(Id_singer),
-Id_ganre serial references ganre_singer(Id_ganre)
 Name_singer varchar(40) not null);
 
 CREATE table if not exists list_alboms (
-Id_singer serial references list_singers(Id_singer),
 Id_albom serial references singer_albom(Id_albom),
 Name_albom varchar(40) not null,
 Birthday_albom integer check(1900 < Birthday_albom < 2021));
@@ -19,7 +17,6 @@ CREATE table if not exists list_trecks (
 Id_albom serial references list_alboms(Id_albom),
 Id_treck serial references treck_collections(Id_treck),
 Name_treck varchar(40) not null,
-Id_collection serial references treck_collections(Id_collection)
 Tame_treck integer not null);
 
 CREATE table if not exists list_collections (
