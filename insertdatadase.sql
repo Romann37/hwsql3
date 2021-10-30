@@ -19,7 +19,7 @@ INSERT INTO list_alboms(Id_albom, Name_albom, Birthday_albom)
         (4, 'Dance with me', 1972),
         (5, 'Woman', 1992),
         (6, 'Baby', 1994),
-        (7, 'Winter', 1984),
+        (7, 'Winter', 2020),
         (8, 'The Last stand', 2017);
 # таблица треков
 INSERT INTO list_trecks(Id_albom, Id_treck, Name_treck, Tame_treck) 
@@ -69,7 +69,8 @@ INSERT INTO ganre_singer (Id_singer, Id_ganre)
         (5, 5),
         (6, 1),
         (7, 1),
-        (8, 3);
+        (8, 3)
+        (1, 3);
 # таблица исполнител-альбом
 INSERT INTO singer_albom (Id_singer, Id_albom) 
     VALUES 
@@ -98,7 +99,7 @@ INSERT INTO treck_collections (Id_collection, Id_treck)
         (4, 12),
         (5, 13),
         (6, 14),
-        (7, 15),
-        (8, 16);
+        (7, 15);
+        
 
 
