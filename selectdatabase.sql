@@ -13,7 +13,7 @@ SELECT Name_collection FROM list_collections
     WHERE Birthday_collection BETWEEN 2018 AND 2020;
 #исполнители, чье имя состоит из 1 слова;
 SELECT Name_singer FROM list_singers
-    Where Name_singer NOT IN (' ');
+    Where Name_singer NOT LIKE '%% %%';
 #название треков, которые содержат слово "мой" / "мой".
 SELECT Name_treck FROM list_trecks
     WHERE Tame_treck LIKE '%%my%%'
